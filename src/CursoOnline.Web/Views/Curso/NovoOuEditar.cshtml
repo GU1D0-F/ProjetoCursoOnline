@@ -18,7 +18,7 @@
     <div class="row form-wrapper">
         <div class="col-md-12">
             <form id="form" class="form-horizontal" asp-action="Salvar" asp-controller="Curso" asp-anti-forgery
-                  data-ajax="true" data-ajax-method="POST" data-ajax-success="window.location = '/Curso'">
+                  data-ajax="true" data-ajax-method="POST" data-ajax-failure="formQuandoFalha" data-ajax-success="window.location = '/Curso'">
                 <div class="form-group">
                     <label class="col-md-2 control-label">Nome</label>
                     <div class="col-md-8">
@@ -72,6 +72,7 @@
     <script src="/js/jquery.validate.min.js"></script>
     <script src="/js/jquery.validate.unobtrusive.js"></script>
     <script src="/js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="/js/excecaoDeDominio.js"></script>
 }
 
 
